@@ -6,5 +6,5 @@ firstName: String,
 lastName: String,
 email: String
 
-});
-var UserModel = mongoose.model('User', UserSchema);
+}, {strict: false});
+module.exports = mongoose.model('User', UserSchema);

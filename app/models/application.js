@@ -3,9 +3,9 @@ Schema = mongoose.Schema;
 
 var AppSchema = new Schema({
 appName: String,
-groupName: String,
+groupName: String
 
 
-});
+}, {strict: false});
 
-var ApplicationModel = mongoose.model('Application', AppSchema);
+module.exports = mongoose.model('Application', AppSchema);

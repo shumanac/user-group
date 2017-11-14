@@ -10,10 +10,11 @@ module.exports = function () {
 
     app.use(bodyParser.json());
 
- 
+    // app.set('views', './app/views');
+    // app.set('view engine', 'ejs');
 
-   // require('../app/routes/index.server.routes.js')(app);
-  //  require('../app/routes/smile.server.routes.js')(app);
+    require('../app/routes/application.routes.js');
+    require('../app/routes/user.routes.js');
 
     app.use(express.static('./public'));
 

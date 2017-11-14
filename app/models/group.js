@@ -6,5 +6,5 @@ groupName: String,
 userName: String
 
 
-});
-var GroupModel = mongoose.model('Group', GroupSchema);
+}, {strict: false});
+module.exports = mongoose.model('Group', GroupSchema);

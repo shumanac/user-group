@@ -11,7 +11,7 @@ var bodyParser = require('body-parser');
 
 var app = express();
 var db = mongoose();
-var config = {port:59175};
+var port = 3000;
 
 
 
@@ -25,7 +25,7 @@ app.use(bodyParser.json());
 
 
 
-app.listen(config.port);
+app.listen(port);
 
 module.exports = app;
-console.log('Server running at http://localhost:' + config.port);
+console.log('Server running at http://localhost:' + port);
